@@ -3,6 +3,8 @@ import Table from 'react-bootstrap/Table';
 
 function Pricing() {
     return (
+        <>        <h1>Betta Fish Pricing Information</h1>
+        
         <Table striped bordered hover>
             <thead>
                 <tr>
@@ -32,9 +34,26 @@ function Pricing() {
                     <td>Tail looks like a half-moon or semicircle and flares to 180 degrees. Aka double tail bettas.</td>
                     <td>$26.99</td>
                 </tr>
+                <tr>
+                    <td>Elephant Ear</td>
+                    <td>Enormous fins and tail that resemble the ears of an elephant.</td>
+                    <td>$14.99</td>
+                </tr>
+                <tr>
+                    <td>RoseTail</td>
+                    <td>Large flowing D-shaped caudal fin.</td>
+                    <td>$19.99</td>
+                </tr>
+                <tr>
+                    <td>Paradise</td>
+                    <td>Usually blue body with yellowish fins. Can sometimes be three colors.</td>
+                    <td>$19.99</td>
+                </tr>
             </tbody>
         </Table>
-    )
+        </>
+
+    );
 }
 
 export default Pricing;
