@@ -1,0 +1,40 @@
+import React from "react";
+import Table from 'react-bootstrap/Table';
+
+function Pricing() {
+    return (
+        <Table striped bordered hover>
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Veiltail</td>
+                    <td>Long, flowing tail that swoops downward. Come s in many color variations.</td>
+                    <td>$3.99</td>
+                </tr>
+                <tr>
+                    <td>Crowntail</td>
+                    <td>Distinctive fringed fins that flow as they swim. Can be aggressive.</td>
+                    <td>$4.50</td>
+                </tr>
+                <tr>
+                    <td>Butterfly</td>
+                    <td>Multi-colored bodies and can have a few different tail types.</td>
+                    <td>$12.99</td>
+                </tr>
+                <tr>
+                    <td>Halfmoon</td>
+                    <td>Tail looks like a half-moon or semicircle and flares to 180 degrees. Aka double tail bettas.</td>
+                    <td>$26.99</td>
+                </tr>
+            </tbody>
+        </Table>
+    )
+}
+
+export default Pricing;

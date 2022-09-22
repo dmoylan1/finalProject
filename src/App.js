@@ -1,23 +1,32 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from 'react-router-dom';
+
+import Home from './pages/Home';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Pricing from './pages/Pricing';
+import Error from './pages/Error';
+import NavBar from './components/NavBar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Am I working?
-        </a>
-      </header>
-    </div>
+      <Router>
+      <NavBar />
+
+        <Routes>
+          <Route path='/' element={<Home/>} />
+          <Route path='/about' element={<About/>}>
+            <Route path=':something' element={<About/>}/>
+            </Route>
+          <Route path='/contact' element={<Contact/>} />
+          <Route path='/pricing' element={<Pricing/>} />
+          <Route path='*' element={<Error/>} />
+        </Routes>
+      </Router>
   );
 }
 
