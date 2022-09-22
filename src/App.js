@@ -7,7 +7,7 @@ import {
 
 import Home from './pages/Home';
 import About from './pages/About';
-import Contact from './pages/Contact';
+import Reviews from './pages/Reviews';
 import Pricing from './pages/Pricing';
 import Error from './pages/Error';
 import NavBar from './components/NavBar';
@@ -19,11 +19,9 @@ function App() {
 
         <Routes>
           <Route path='/' element={<Home/>} />
-          <Route path='/about' element={<About/>}>
-            <Route path=':something' element={<About/>}/>
-            </Route>
-          <Route path='/contact' element={<Contact/>} />
+          <Route path='/about' element={<About/>} />
           <Route path='/pricing' element={<Pricing/>} />
+          <Route path='/reviews' element={<Reviews/>} />
           <Route path='*' element={<Error/>} />
         </Routes>
       </Router>

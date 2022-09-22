@@ -3,8 +3,10 @@ import Table from 'react-bootstrap/Table';
 
 function Pricing() {
     return (
-        <>        <h1>Betta Fish Pricing Information</h1>
-        
+        <>        
+        <br />
+        <h4>Betta Fish Pricing Information</h4>
+        <br />
         <Table striped bordered hover>
             <thead>
                 <tr>
