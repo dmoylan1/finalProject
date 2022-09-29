@@ -1,9 +1,10 @@
 import React from 'react';
 import ReviewForm from './ReviewForm';
 
-const AddReview = () => {
+const AddReview = ({ history, reviews, setReviews }) => {
     const handleOnSubmit = (review) => {
-        console.log(review);
+        setReviews([review, ...reviews]);
+        history.push('/');
     };
 
     return (
